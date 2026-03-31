@@ -1,73 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <meta name="description" content="Valdyr Pierre's personal portfolio showcasing skills, experience, and projects.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Valdyr Pierre</title>
-
-    </head>
-    <body>
-        
-        <header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Valdyr Pierre's IT and technical support portfolio with experience, education, and certifications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Valdyr Pierre | Portfolio</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="kicker">Portfolio</p>
             <h1>Valdyr Pierre</h1>
-            <h2> welcome to my personal portfolio </h2>
-                        <p>I am an aspiring full-stack developer, data analyst, cybersecurity specialist, and scientist.</p>
-            <img src="profile.jpeg" alt="a picture of me">
-        </header>
-        <main>
-            
-            <div class="nav">
-                <button onclick="location.href='projects.html'">project</button>
-                <button onclick="location.href='certification.html'">certification</button>
-               
+            <p class="tagline">IT Technician and Support Professional focused on practical troubleshooting, clear communication, and reliable service.</p>
+            <div class="contact-row">
+                <span>Stoughton, MA</span>
+                <a href="project.html">Projects</a>
+                <a href="mailto:vpierre509@gmail.com">vpierre509@gmail.com</a>
+                <a href="tel:+17749467078">774-946-7078</a>
             </div>
-            <div class="skills">
-                <main>
-                    <aside class="sidebar">
-                        <!-- Sidebar with skills -->
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>Coding Languages: Python, C#, Java, HTML</li>
-                            <li>Operating Systems: Linux, Windows, MacOS</li>
-                            <li>Cloud Computing: Azure</li>
-                            <li>Software: Zoom, Microsoft 365, Excel, Google Workspace</li>
-                        </ul>
-                    </aside>
-            </div>
+        </div>
+    </header>
 
-            <div class="experience">
-                <h2> experience
-                </h2>
-                <p><i><b>lighting star</b></i> - full stack developer (March 2025 - Present)</p>
+    <main>
+        <section class="panel" id="experience">
+            <h2>Experience</h2>
+
+            <article class="job">
+                <div class="job-head">
+                    <h3>uBreakiFix</h3>
+                    <p>Brockton, MA</p>
+                </div>
+                <p class="role">IT Technician / Repair Specialist | May 2025 - Present</p>
                 <ul>
-                    <li> worked on a project to develop a web application for a lighting star </li>
-                    <li> used HTML, CSS, and JavaScript to create the front-end</li>
-                    <li> used Node.js and Express to create the back-end</li>
-                    <li> used MongoDB to store data</li>
+                    <li>Diagnose and resolve hardware and software issues for computers, mobile devices, and operating systems.</li>
+                    <li>Manage and document service tickets to ensure accurate tracking and timely resolution.</li>
+                    <li>Troubleshoot system, network, and device performance issues using structured problem-solving techniques.</li>
+                    <li>Explain technical solutions in user-friendly language to improve support outcomes.</li>
                 </ul>
-             <p><i><b>Target</b></i> - Inbound Stocker (Nov 2022 - Present)</p>
-            <ul>
-                <li><b>Organize and Display Products:</b> Ensure shelves are fully stocked and neatly organized with a variety of products, enhancing the shopping experience for customers.</li>
-                <li><b>Inventory Management:</b> Regularly conduct stock checks and cycle counts to maintain accurate inventory levels and identify restocking needs.</li>
-                <li><b>Stock Rotation:</b> Apply the FIFO (First In, First Out) method to rotate stock and minimize waste, ensuring that older products are sold first.</li>
-            </ul>
+            </article>
 
-                
-            </div>
+            <article class="job">
+                <div class="job-head">
+                    <h3>Sonesta</h3>
+                    <p>Burlington, MA</p>
+                </div>
+                <p class="role">Front Desk | April 2025 - Present</p>
+                <ul>
+                    <li>Process payments while maintaining high data accuracy and security standards.</li>
+                    <li>Document maintenance and technical issues and coordinate updates with technicians.</li>
+                    <li>Resolve customer concerns quickly in a fast-paced hospitality environment.</li>
+                    <li>Support hotel management systems with login issues, reservation errors, and navigation assistance.</li>
+                </ul>
+            </article>
+        </section>
 
-        </main>
-        <footer>
-            <!-- Styled download button -->
-            <button>
-                <a href="https://docs.google.com/document/d/19rV3L3_H5dDeNz1YCF-u5rBlJVRxhY20/edit?usp=sharing&ouid=113722888768421839254&rtpof=true&sd=true">Download My Resume</a>
-            </button>
-            <div class="contact">
-                <a href="mailto:vpierre509@gmail.com" target="_blank" class="email-button">Email Me</a>
-                <p>Phone: 774-946-7078</p>
-                <p>Thank you for taking your time visiting my website. If you have any questions or feedback, please fill out this form, and I will reach out to you as soon as I can.</p>
+        <section class="grid-two">
+            <article class="panel" id="education">
+                <h2>Education</h2>
+                <p class="card-title">Curry College</p>
+                <p>Milton, MA</p>
+                <p>Computer Science (In Progress)</p>
+            </article>
+
+            <article class="panel" id="certification">
+                <h2>Certification</h2>
+                <p class="card-title">Britannica</p>
+                <p>Stoughton, MA</p>
+                <p>Translator Certification (French and Haitian Creole) - Sep 2022</p>
+            </article>
+        </section>
+
+        <section class="panel" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Operating Systems</h3>
+                    <p>Windows, macOS, Linux (Ubuntu, CentOS), Active Directory</p>
+                </div>
+                <div>
+                    <h3>Hardware</h3>
+                    <p>iPads, laptops, desktops, smartboards, IoT devices, 3D printers, AV equipment (projectors, scanners, printers)</p>
+                </div>
+                <div>
+                    <h3>Programming</h3>
+                    <p>PowerShell, Python, Zsh, HTML5, CSS3, JavaScript, C#, TypeScript</p>
+                </div>
+                <div>
+                    <h3>Networking</h3>
+                    <p>LANs, WANs, VLANs, TCP/IP, Cisco Meraki, SDN</p>
+                </div>
+                <div>
+                    <h3>Cloud Computing</h3>
+                    <p>Microsoft Azure</p>
+                </div>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer>
+        <a class="btn" href="https://docs.google.com/document/d/19rV3L3_H5dDeNz1YCF-u5rBlJVRxhY20/edit?usp=sharing&ouid=113722888768421839254&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <p>Available for IT support, technical troubleshooting, and entry-level engineering opportunities.</p>
+    </footer>
+</body>
 </html>
