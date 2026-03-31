@@ -1,77 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head>    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valdyr Pierre's project portfolio with software and web development work.">
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Projects - Valdyr Pierre</title>
+    <title>Projects | Valdyr Pierre</title>
 </head>
 <body>
-    <header>
-        <h1>Valdyr Pierre</h1>
-        <h2>Welcome to My Personal Portfolio</h2>
-                    <p>I am an aspiring full-stack developer, data analyst, cybersecurity specialist, and scientist.</p>
-        <img src="profile.jpeg" alt="A picture of me">
-        <div class="nav">
-            <button onclick="location.href='homepage.html'">Homepage</button>
-            <button onclick="location.href='certification.html'">Certification</button>
-           
+    <header class="hero">
+        <div class="hero-content">
+            <p class="kicker">Portfolio</p>
+            <h1>Project Showcase</h1>
+            <p class="tagline">A collection of web and software projects built with HTML, CSS, JavaScript, C#, Java, and Python.</p>
+            <div class="contact-row">
+                <a href="HomePage.html">Back to Home</a>
+                <a href="https://github.com/valdyrpierre" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            </div>
         </div>
     </header>
+
     <main>
-        <h2><b>Projects</b></h2>
-        <ol type="1">
-            <li>
-                <a href="file:///Users/valdyrpierre/Desktop/NUTRIO/nutrio.html" class="project-button">
-                    Nutrio (HTML, JS, CSS)
-                </a>: A web application designed to help users create personalized meal plans based on their dietary preferences, allergies, and calorie requirements.
-            </li>
-            <li>
-                <a href="https://valdyrpierre.github.io/cpu-algorithms-scheduling-/homepage2.html" class="project-button">
-                    CPU Algorithm Scheduling Calculator (HTML, JS, CSS)
-                </a>: A web application that allows users to calculate the average waiting time and turnaround time for different CPU scheduling algorithms.
-            </li>
-            <li>
-                <a href="https://github.com/valdyrpierre/deck-of-card-C-" class="project-button">
-                    Deck of Cards (C#)
-                </a>: Object-Oriented program that creates and shuffles a deck of cards.
-            </li>
-            <li>
-                <a href="https://github.com/valdyrpierre/black-jack" class="project-button">
-                    Blackjack (C#)
-                </a>: A program that creates and shuffles a deck, allowing users to play against AI generated in the program.
-            </li>
-            <li>
-                <a href="https://games.washingtonpost.com/games/blackjack" class="project-button">
-                    Blackjack (Python)
-                </a>: A program that creates and shuffles a deck, allowing users to play against AI generated in the program.
-            </li>
-            <li>
-                <a href="https://github.com/valdyrpierre/deck-of-card" class="project-button">
-                    Deck of Cards (Java)
-                </a>: Created a deck of cards and implemented shuffle functionality.
-            </li>
-            <li>
-                <a href="https://valdyrpierre.github.io/e-calculator-/assigmentiv.html" class="project-button">
-                    Calculator (HTML)
-                </a>: A simple web-based calculator application.
-            </li>
-            <li>
-                <a href="https://github.com/valdyrpierre" class="project-button">
-                    My GitHub
-                </a>: If you want to see more of my projects, check out my GitHub account.
-            </li>
-        </ol>
+        <section class="panel" id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Nutrio</h3>
+                    <p class="project-stack">HTML, CSS, JavaScript</p>
+                    <p>Web app designed to help users create personalized meal plans based on dietary preferences, allergies, and calorie requirements.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3><a href="https://valdyrpierre.github.io/cpu-algorithms-scheduling-/homepage2.html" target="_blank" rel="noopener noreferrer">CPU Algorithm Scheduling Calculator</a></h3>
+                    <p class="project-stack">HTML, CSS, JavaScript</p>
+                    <p>Calculates average waiting time and turnaround time for different CPU scheduling algorithms.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3><a href="https://github.com/valdyrpierre/deck-of-card-C-" target="_blank" rel="noopener noreferrer">Deck of Cards</a></h3>
+                    <p class="project-stack">C#</p>
+                    <p>Object-oriented program that creates, manages, and shuffles a full deck of cards.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3><a href="https://github.com/valdyrpierre/black-jack" target="_blank" rel="noopener noreferrer">Blackjack</a></h3>
+                    <p class="project-stack">C#</p>
+                    <p>Card game implementation where users play blackjack against computer-controlled logic.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3><a href="https://github.com/valdyrpierre/deck-of-card" target="_blank" rel="noopener noreferrer">Deck of Cards</a></h3>
+                    <p class="project-stack">Java</p>
+                    <p>Created a card deck model with shuffle functionality and object-based structure.</p>
+                </article>
+
+                <article class="project-card">
+                    <h3><a href="https://valdyrpierre.github.io/e-calculator-/assigmentiv.html" target="_blank" rel="noopener noreferrer">Calculator</a></h3>
+                    <p class="project-stack">HTML</p>
+                    <p>Simple web-based calculator focused on clean layout and straightforward user interaction.</p>
+                </article>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <button>
-            <a href="https://docs.google.com/document/d/19rV3L3_H5dDeNz1YCF-u5rBlJVRxhY20/edit?usp=sharing&ouid=113722888768421839254&rtpof=true&sd=true">
-                Download My Resume
-            </a>
-        </button>
-        <div class="contact">
-            <a href="mailto:vpierre509@gmail.com" target="_blank" class="email-button">Email Me</a>
-            <p>Phone: 774-946-7078</p>
-            <p>Thank you for taking the time to visit my website. If you have any questions or feedback, please fill out this form, and I will reach out to you as soon as I can.</p>
-        </div>
+        <a class="btn" href="https://docs.google.com/document/d/19rV3L3_H5dDeNz1YCF-u5rBlJVRxhY20/edit?usp=sharing&ouid=113722888768421839254&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <p>Contact: <a href="mailto:vpierre509@gmail.com">vpierre509@gmail.com</a> | 774-946-7078</p>
     </footer>
 </body>
 </html>
