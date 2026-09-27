@@ -153,6 +153,11 @@ h3{margin:0;font-size:1.2rem;line-height:1.3;font-weight:750;font-variation-sett
 .project p.use strong{color:var(--ink);font-weight:700}
 .project .link{display:inline-flex;align-items:center;min-height:2.75rem;margin-top:.4rem;font-weight:700}
 
+.shot{margin:calc(-1 * clamp(1.25rem,3vw,1.75rem));margin-top:calc(-1 * clamp(1.25rem,3vw,1.75rem) - 6px);margin-bottom:1.1rem;aspect-ratio:9/5;overflow:hidden;background:var(--rule)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.project:hover .shot img{transform:scale(1.04)}
+@media (prefers-reduced-motion:reduce){.shot img{transition:none}.project:hover .shot img{transform:none}}
+
 /* Experience */
 .timeline{position:relative;margin:0;padding:0 0 0 1.6rem;list-style:none}
 .timeline::before{content:"";position:absolute;left:.35rem;top:.5rem;bottom:.5rem;width:2px;background:var(--rule)}
@@ -305,18 +310,20 @@ footer{margin-top:clamp(3.5rem,9vw,6rem);background:var(--navy);color:var(--on-n
       <p class="use"><strong>How it helps me:</strong> talking directly with veterans taught me to turn what people describe into clear requirements. I use that skill every day when a customer explains a problem over the phone and I have to work out what's really wrong.</p>
     </article>
     <article class="project">
+      <figure class="shot"><img src="nutrio.jpg" alt="Four glass containers of prepped meals with vegetables, grains, and beans" width="1200" height="667" loading="lazy"></figure>
       <h3>Nutrio</h3>
       <p class="stack">HTML, CSS, JavaScript, PHP, MySQL</p>
       <p>A full-stack fitness and nutrition tracker. Each user has a secure account, logs meals and calories, records workouts, and can look back at their progress over time. I built the front end, the PHP login system, and the MySQL database behind it.</p>
       <p class="use"><strong>How it helps me:</strong> I built Nutrio for myself. I use it to track what I eat and how I train for soccer, so I can see whether my routine is actually working instead of guessing.</p>
-      <a class="link" href="http://valdyrpierre.github.io/Nutrio/homepage.html">Open Nutrio</a>
+      <a class="link" href="https://valdyrpierre.github.io/Nutrio/homepage.html">Open Nutrio</a>
     </article>
     <article class="project">
+      <figure class="shot"><img src="wage-tracker.jpg" alt="A hand with a stylus reviewing budget charts on a tablet" width="1200" height="667" loading="lazy"></figure>
       <h3>Wage &amp; Budget Tracker</h3>
       <p class="stack">Supabase, PostgreSQL, JavaScript, Chart.js</p>
       <p>An app for tracking hours, pay, and spending. I clock in and out live, it calculates overtime automatically, and it compares what I've earned against my budget with charts. Database-level security policies keep each user's financial data private.</p>
       <p class="use"><strong>How it helps me:</strong> I work more than one job, and tracking hours and pay by hand wasn't working. Now I can see what I've earned across jobs at any moment, check that my paychecks are right, and plan my spending before the money comes in.</p>
-      <a class="link" href="https://valdyrpierre.github.io/wage/dashboard.html">Open the tracker</a>
+      <a class="link" href="https://valdyrpierre.github.io/wage/homepage.html">Open the tracker</a>
     </article>
   </div>
 </section>
