@@ -98,16 +98,19 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--sun);outline-offset
 .btn.line{color:var(--ink)}
 
 /* ---------- Hero photo ---------- */
-.photo{margin:0;align-self:end;position:relative;isolation:isolate}
-.photo::before{
-  content:"";position:absolute;z-index:-1;left:43%;top:12%;transform:translateX(-50%);
-  width:78%;max-width:420px;aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(circle at 35% 30%,#FFD978 0%,var(--sun) 55%,#E0A62E 100%);
-}
+/* The navy background and gold circle are part of profile-photo.jpg.
+   The masks soften the photo's edges so it melts into the hero. */
+.photo{margin:0;align-self:end;position:relative}
 .photo img{
   width:100%;height:auto;
-  -webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent 100%);
-          mask-image:linear-gradient(to bottom,#000 82%,transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to bottom,transparent 0,#000 4%,#000 82%,transparent 100%),
+    linear-gradient(to right,transparent 0,#000 3%,#000 97%,transparent 100%);
+  -webkit-mask-composite:source-in;
+          mask-image:
+    linear-gradient(to bottom,transparent 0,#000 4%,#000 82%,transparent 100%),
+    linear-gradient(to right,transparent 0,#000 3%,#000 97%,transparent 100%);
+          mask-composite:intersect;
 }
 
 /* ---------- Stats ---------- */
