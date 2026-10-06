@@ -141,6 +141,7 @@ h3{margin:0;font-size:1.2rem;line-height:1.3;font-weight:750;font-variation-sett
 .project > .link{margin-top:auto!important;padding-top:.8rem}
 .project::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--blue)}
 .project:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--blue) 45%,var(--rule))}
+.project.wide{grid-column:1 / -1}
 .project.featured{grid-column:1 / -1;background:var(--navy);color:var(--on-navy);border-color:var(--navy)}
 .project.featured::before{background:var(--sun)}
 .project.featured .stack,.project.featured p.use{color:var(--on-navy-muted)}
