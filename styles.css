@@ -179,6 +179,7 @@ ul.points li::marker{color:var(--blue)}
 .duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2rem)}
 .box{background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);padding:clamp(1.25rem,3vw,1.75rem)}
 .box-title{margin-bottom:1rem}
+.edu-current{margin-bottom:clamp(1rem,2.5vw,1.5rem)}
 .certs{margin:0;padding:0;list-style:none}
 .certs li{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--rule)}
 .certs li:first-child{padding-top:0}
